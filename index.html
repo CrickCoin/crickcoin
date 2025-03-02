@@ -35,15 +35,20 @@
     /* FALLING CRICKET BALLS */
     .falling-balls {
       position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      pointer-events: none; overflow: hidden;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;
+      pointer-events: none; 
+      overflow: hidden;
       z-index: 1;
     }
     .ball {
       position: absolute;
-      width: 50px; height: 50px;
-      background-size: cover; background-position: center;
+      width: 50px; 
+      height: 50px;
+      background-size: cover; 
+      background-position: center;
       background-image: url('https://via.placeholder.com/50?text=Ball');
       opacity: 0.4;
       animation: fallBalls 15s linear infinite;
@@ -62,25 +67,35 @@
 
     /* FIXED NAV */
     nav {
-      position: fixed; top: 0; left: 0;
+      position: fixed; 
+      top: 0; 
+      left: 0;
       width: 100%;
       background: rgba(0,0,0,0.8);
       padding: 15px 20px;
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between;
       z-index: 999;
     }
     nav .left-nav {
-      display: flex; align-items: center; gap: 15px;
+      display: flex; 
+      align-items: center; 
+      gap: 15px;
     }
     nav img.logo {
       height: 40px;
     }
     nav a {
-      color: #fff; font-weight: 600;
-      text-transform: uppercase; font-size: 0.9rem;
+      color: #fff; 
+      font-weight: 600; 
+      text-transform: uppercase; 
+      font-size: 0.9rem;
       transition: color 0.3s;
     }
-    nav a:hover { color: #ffcb05; }
+    nav a:hover {
+      color: #ffcb05;
+    }
 
     /* HERO SECTION */
     .hero {
@@ -93,20 +108,35 @@
     }
     .hero h1 {
       font-family: 'Russo One', sans-serif;
-      font-size: 4rem; margin-bottom: 20px;
+      font-size: 4rem; 
+      margin-bottom: 20px;
       color: #ffcb05;
     }
     .hero p {
-      max-width: 700px; margin: 0 auto 30px auto;
-      font-size: 1.2rem; line-height: 1.5;
+      max-width: 700px; 
+      margin: 0 auto 20px auto; 
+      font-size: 1.2rem; 
+      line-height: 1.5;
+    }
+    .contract-address {
+      font-size: 0.95rem; 
+      font-weight: 600; 
+      margin-bottom: 30px;
+      color: #ffcb05;
     }
     .cta-button {
-      display: inline-block; background-color: #ffcb05; color: #0d0d0d;
-      padding: 15px 30px; border-radius: 30px; font-weight: 600;
-      text-transform: uppercase; transition: transform 0.3s, opacity 0.3s;
+      display: inline-block; 
+      background-color: #ffcb05; 
+      color: #0d0d0d;
+      padding: 15px 30px; 
+      border-radius: 30px; 
+      font-weight: 600; 
+      text-transform: uppercase;
+      transition: transform 0.3s, opacity 0.3s;
     }
     .cta-button:hover {
-      transform: scale(1.05); opacity: 0.9;
+      transform: scale(1.05); 
+      opacity: 0.9;
     }
 
     /* SECTION WRAPPERS (semi-translucent background) */
@@ -120,43 +150,34 @@
     }
     section h2 {
       font-family: 'Russo One', sans-serif;
-      font-size: 2.5rem; margin-bottom: 30px;
-      color: #ffcb05; text-align: center; text-transform: uppercase;
+      font-size: 2.5rem; 
+      margin-bottom: 30px;
+      color: #ffcb05; 
+      text-align: center; 
+      text-transform: uppercase;
     }
     section .description {
-      font-size: 1.1rem; line-height: 1.8; max-width: 800px;
-      margin: 0 auto 20px; text-align: center;
+      font-size: 1.1rem; 
+      line-height: 1.8; 
+      max-width: 800px;
+      margin: 0 auto 20px; 
+      text-align: center;
       color: #fff;
     }
 
     /* TOKENOMICS */
-    #tokenomics .toggle-section { text-align: center; margin-top: 20px; }
-    #tokenomics .toggle-button {
-      padding: 10px 20px; border: 1px solid #ffcb05; border-radius: 25px;
-      background: none; color: #ffcb05; cursor: pointer; font-weight: 600; transition: 0.3s;
-    }
-    #tokenomics .toggle-button:hover {
-      background: #ffcb05; color: #0d0d0d;
-    }
-    .toggle-content {
-      display: none; margin-top: 20px;
-    }
-    .tokenomics-table {
+    #tokenomics .tokenomics-table {
       width: 100%; margin: 30px auto; border-collapse: collapse; max-width: 700px;
     }
-    .tokenomics-table th, .tokenomics-table td {
+    #tokenomics .tokenomics-table th, 
+    #tokenomics .tokenomics-table td {
       border: 1px solid #444; padding: 15px; text-align: center;
     }
-    .tokenomics-table th {
+    #tokenomics .tokenomics-table th {
       background: #222; font-weight: 600; color: #ffcb05;
     }
-    .tokenomics-table tr:nth-child(even) {
+    #tokenomics .tokenomics-table tr:nth-child(even) {
       background: #1c1c1c;
-    }
-    .vesting-info {
-      margin-top: 20px; color: #fff;
-      font-size: 1rem; line-height: 1.6; max-width: 800px;
-      margin: 20px auto 0; text-align: center;
     }
 
     /* COMMUNITY-DRIVEN GOVERNANCE - TIMELINE-STYLE WOODEN BOXES (No images) */
@@ -177,8 +198,6 @@
     }
     .gov-item.left { left: 0; text-align: right; }
     .gov-item.right { left: 50%; text-align: left; }
-
-    /* Wooden background box, but no images */
     .gov-box {
       background: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/Wood_texture_bg.jpg') no-repeat center center/cover;
       border: 3px solid #5a3f2b;
@@ -266,7 +285,7 @@
       .hero h1 { font-size: 2.5rem; }
       .hero p { font-size: 1rem; }
       nav .left-nav {
-        display: block; 
+        display: block;
       }
       .roadmap-item, .gov-item {
         width: 100%; padding: 20px; text-align: center;
@@ -304,7 +323,7 @@
       <a href="#tokenomics">Tokenomics</a>
       <a href="#governance">Governance</a>
       <a href="#roadmap">Roadmap</a>
-      <!-- Whitepaper: added "download" attribute to prompt a save dialog -->
+      <!-- Whitepaper: using `download` to prompt user to save the PDF -->
       <a 
         href="https://github.com/CrickCoin/CrickCoin-Whitepaper/blob/main/crick-coin.pdf"
         download="CrickCoin-Whitepaper.pdf">
@@ -313,8 +332,6 @@
       <a href="https://pancakeswap.finance/" target="_blank">Buy on PancakeSwap</a>
       <a href="#social">Social Media</a>
     </div>
-    <!-- Right nav: now empty -->
-    <div class="right-nav nav-social"></div>
   </nav>
 
   <!-- Hero Section -->
@@ -323,6 +340,10 @@
     <p>
       A community-driven, cricket-inspired meme coin!<br>
       Total Supply: <strong>2 Billion</strong> tokens.
+    </p>
+    <!-- Contract Address here -->
+    <p class="contract-address">
+      Contract Address: 0x4Fe492cBd6F623A96f98a0CAa774Fd115A35Fdab
     </p>
     <a href="#about" class="cta-button">Discover More</a>
   </header>
@@ -338,7 +359,7 @@
     </p>
   </section>
 
-  <!-- Tokenomics -->
+  <!-- Tokenomics (Always Visible) -->
   <section id="tokenomics">
     <h2>Tokenomics</h2>
     <p class="description">
@@ -348,70 +369,61 @@
       <strong>1200M</strong> for Governance Treasury (locked in UniCrypt), and
       <strong>200M</strong> for Development (1-year vesting).
     </p>
-    <div class="toggle-section">
-      <button class="toggle-button" onclick="toggleTokenomics()">Show Detailed Distribution</button>
-    </div>
-    <div class="toggle-content" id="toggleDetails">
-      <table class="tokenomics-table">
-        <thead>
-          <tr>
-            <th>Allocation</th>
-            <th>Amount (Millions)</th>
-            <th>Details</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Total Supply</td>
-            <td>2000</td>
-            <td>2 Billion Tokens</td>
-          </tr>
-          <tr>
-            <td>Airdrop</td>
-            <td>100</td>
-            <td>Community Giveaways</td>
-          </tr>
-          <tr>
-            <td>Liquidity</td>
-            <td>500</td>
-            <td>One-time call by Owner</td>
-          </tr>
-          <tr>
-            <td>Governance Treasury</td>
-            <td>1200</td>
-            <td>
-              Locked in UniCrypt<br>
-              <a style="color:#ffcb05"
-                 href="https://app.uncx.network/lockers/token/chain/56/address/0x4fe492cbd6f623a96f98a0caa774fd115a35fdab"
-                 target="_blank">View Lock</a>
-            </td>
-          </tr>
-          <tr>
-            <td>Development</td>
-            <td>200</td>
-            <td>1-year vesting for the developer</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="vesting-info">
-      Our <strong>200M Development tokens</strong> are secured with a 1-year vesting schedule, ensuring the team’s long-term commitment. 
-      <br>
-      <small>
-        Contract is viewable on 
-        <a href="https://app.uncx.network/" style="color:#ffcb05" target="_blank">UniCrypt</a> for full transparency.
-      </small>
-    </div>
+    <table class="tokenomics-table">
+      <thead>
+        <tr>
+          <th>Allocation</th>
+          <th>Amount (Millions)</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Total Supply</td>
+          <td>2000</td>
+          <td>2 Billion Tokens</td>
+        </tr>
+        <tr>
+          <td>Airdrop</td>
+          <td>100</td>
+          <td>Community Giveaways</td>
+        </tr>
+        <tr>
+          <td>Liquidity</td>
+          <td>500</td>
+          <td>One-time call by Owner</td>
+        </tr>
+        <tr>
+          <td>Governance Treasury</td>
+          <td>1200</td>
+          <td>
+            Locked in UniCrypt<br>
+            <a style="color:#ffcb05"
+               href="https://app.uncx.network/lockers/token/chain/56/address/0x4fe492cbd6f623a96f98a0caa774fd115a35fdab"
+               target="_blank">View Lock</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Development</td>
+          <td>200</td>
+          <td>1-year vesting for the developer</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Additional bullet points + emphasis as requested -->
+    <ul style="list-style-type: disc; margin: 20px auto 0; max-width: 800px; color: #fff; font-size: 1rem;">
+      <li>Our <strong>200M Development tokens</strong> are secured with a 1-year vesting schedule, ensuring the team’s long-term commitment.</li>
+      <li><strong>Contract is viewable on UniCrypt for full transparency</strong>, so every token holder can verify the locked status.</li>
+    </ul>
   </section>
 
-  <!-- Community-Driven Governance (No images) -->
+  <!-- Governance -->
   <section id="governance">
     <h2>Community-Driven Governance</h2>
     <p class="description">
       CrickCoin is governed by fans, for fans. Through decentralized voting, locked treasury, and open collaboration, we ensure every voice counts.
     </p>
     <div class="governance-container">
-      <!-- Voting -->
       <div class="gov-item left">
         <div class="gov-box">
           <h4>Voting</h4>
@@ -421,17 +433,15 @@
           </p>
         </div>
       </div>
-      <!-- Treasury -->
       <div class="gov-item right">
         <div class="gov-box">
           <h4>Treasury</h4>
           <p>
-            1200M tokens locked in UniCrypt. Released only by majority consensus. 
+            1200M tokens locked in UniCrypt, released only by majority consensus. 
             Funds can be allocated to marketing, partnerships, or community rewards based on open proposals.
           </p>
         </div>
       </div>
-      <!-- Decentralization -->
       <div class="gov-item left">
         <div class="gov-box">
           <h4>Decentralization</h4>
@@ -441,7 +451,6 @@
           </p>
         </div>
       </div>
-      <!-- Community Initiatives -->
       <div class="gov-item right">
         <div class="gov-box">
           <h4>Community Initiatives</h4>
@@ -526,16 +535,10 @@
     </p>
   </footer>
 
-  <!-- JS -->
+  <!-- JavaScript -->
   <script>
     // Footer Year
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Toggle Tokenomics
-    function toggleTokenomics() {
-      const details = document.getElementById('toggleDetails');
-      details.style.display = (details.style.display === 'block') ? 'none' : 'block';
-    }
   </script>
 </body>
 </html>
